@@ -3,40 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tables</title>
+    <title>Table</title>
 </head>
 <body>
-    <table border="1" style="border-collapse: collapse;">
-        
-        <tr>
-            <th colspan="2" >web development</th>
-        </tr>
+    <!-- colspan and rowspan -->
 
+    <table border="1" style="border-collapse: collapse;">
         <tr>
-            <th>SI.NO</th>
-            <th>course</th>
+            <th>Course</th>
+            <th>Details</th>
         </tr>
-        
 
         <tr>
             <td>1</td>
-            <td>python</td>
-        </tr>
-
-        <tr >
-            <td >2</td>
-            <td>html</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>css</td>
+            <td>Python</td>
         </tr>
 
         <tr>
-            <td>4</td>
-            <td>Js</td>
+            <td>2</td>
+            <td>Javascript</td>
+        </tr>
+    </table> <br><br>
+
+    <table border="1" style="border-collapse: collapse;">
+
+        <tr>
+            <th>Course</th>
+            <th>Topic</th>
         </tr>
 
+        <tr>
+            <td rowspan="3">Python</td>
+            <td>Variables</td>
+        </tr>
+        
+        <tr>
+            <td>Loops</td>
+        </tr>
+
+        <tr>
+            <td>Functions</td>
+        </tr>
+    </table> <br><br>
+
+    <table border="1px" style="border-collapse: collapse;">
+        <tr>
+            <th rowspan="2">Course</th>
+            <th colspan="2">Details</th>
+        </tr>
+
+        <tr>
+            <th>Topic</th>
+            <th>Duration</th>
+        </tr>
+
+        <tr>
+            <td>HTML</td>
+            <td>Tags</td>
+            <td>5</td>
+        </tr>
     </table>
 
 
