@@ -3,67 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table</title>
+    <title>HTML FORMS</title>
 </head>
 <body>
-    <!-- colspan and rowspan -->
+    <form action="submit.html" method="post">
 
-    <table border="1" style="border-collapse: collapse;">
-        <tr>
-            <th>Course</th>
-            <th>Details</th>
-        </tr>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="username" maxlength="12" placeholder="Avinash" required>
+    <br><br>
 
-        <tr>
-            <td>1</td>
-            <td>Python</td>
-        </tr>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="8" required>
+    <br><br>
 
-        <tr>
-            <td>2</td>
-            <td>Javascript</td>
-        </tr>
-    </table> <br><br>
+    <label for="age">Teenager:</label>
+    <input type="number" id="age" name="age" min="13" max="19">
+    <br><br>
 
-    <table border="1" style="border-collapse: collapse;">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
 
-        <tr>
-            <th>Course</th>
-            <th>Topic</th>
-        </tr>
+    <label for="phone">Telephone:</label>
+    <input type="tel" id="phone" name="phone">
+    <br><br>
 
-        <tr>
-            <td rowspan="3">Python</td>
-            <td>Variables</td>
-        </tr>
-        
-        <tr>
-            <td>Loops</td>
-        </tr>
+    <label>
+        <input type="checkbox" name="nationality" value="indian">
+        Indian
+    </label>
+    <br><br>
 
-        <tr>
-            <td>Functions</td>
-        </tr>
-    </table> <br><br>
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+    <input type="radio" name="gender" value="binary"> Binary
+    <br><br>
 
-    <table border="1px" style="border-collapse: collapse;">
-        <tr>
-            <th rowspan="2">Course</th>
-            <th colspan="2">Details</th>
-        </tr>
+    <input type="text" value="Indian" readonly>
+    <br><br>
 
-        <tr>
-            <th>Topic</th>
-            <th>Duration</th>
-        </tr>
+    <label for="course">Languages:</label>
+    <select id="course" name="course">
+        <option value="python" selected>Python</option>
+        <option value="java">Java</option>
+        <option value="nodejs">NodeJS</option>
+    </select>
+    <br><br>
 
-        <tr>
-            <td>HTML</td>
-            <td>Tags</td>
-            <td>5</td>
-        </tr>
-    </table>
+    <input type="submit" value="Submit">
 
+</form>
 
 </body>
 </html>
